@@ -1,0 +1,59 @@
+# Productivity
+alacritty
+codium
+micro
+zed
+calcurse
+
+# Internet
+chromium
+firefox
+
+# Networking
+syncthing
+podman
+docker-ce
+docker-ce-cli
+filezilla
+
+# Office
+xournalpp
+rnote
+foliate
+krita
+inkscape
+blender
+kdenlive
+vlc
+mpv
+
+# Audio
+audacity
+ardour8
+#carla
+qjackctl
+qpwgraph
+
+# Misc
+aisleriot
+qgis
+
+# Development
+python
+poetry
+
+bun
+deno
+
+gcc
+clang
+clangd
+bear
+make
+cmake
+meson
+
+java-devel
+java-latest-openjdk-devel
+
+haskell-platform
