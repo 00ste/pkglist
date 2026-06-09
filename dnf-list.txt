@@ -1,6 +1,6 @@
 # Productivity
 alacritty
-codium
+#codium
 micro
 zed
 calcurse
@@ -8,13 +8,14 @@ calcurse
 # Internet
 chromium
 firefox
+thunderbird
 
 # Networking
 syncthing
-podman
-docker-ce
-docker-ce-cli
-filezilla
+#podman
+#docker-ce
+#docker-ce-cli
+#filezilla
 
 # Office
 xournalpp
@@ -30,20 +31,19 @@ mpv
 # Audio
 audacity
 ardour8
-#carla
+carla
 qjackctl
 qpwgraph
+musescore
 
 # Misc
 aisleriot
-qgis
+flameshot
+imhex
 
 # Development
 python
 poetry
-
-bun
-deno
 
 gcc
 clang
@@ -52,8 +52,3 @@ bear
 make
 cmake
 meson
-
-java-devel
-java-latest-openjdk-devel
-
-haskell-platform

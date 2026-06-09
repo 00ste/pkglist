@@ -1,26 +1,26 @@
 # Internet
 app.zen_browser.zen
 org.equicord.equibop
+#com.protonvpn.www
 
 # Office
 com.github.libresprite.LibreSprite
 md.obsidian.Obsidian
-org.gephi.Gephi
+#org.gephi.Gephi
 
 # Utility
 com.github.qarmin.czkawka
-io.github.mpobaschnig.Vaults
+#io.github.mpobaschnig.Vaults
 #io.gitlab.guillermop.Counters
 
 # Networks
-com.github.marhkb.Pods
+#com.github.marhkb.Pods
 
 # Gaming
 com.vysp3r.ProtonPlus
 net.kuribo64.melonDS
 org.prismlauncher.PrismLauncher
+com.vysp3r.ProtonPlus
 
 # Development
-io.github.MakovWait.Godots
-#me.iepure.devtoolbox
-#org.gnome.design.IconLibrary
+#io.github.MakovWait.Godots
