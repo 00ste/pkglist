@@ -18,11 +18,14 @@ syncthing
 #filezilla
 
 # Office
+dolphin
+okular
 xournalpp
 rnote
 foliate
 krita
 inkscape
+kolourpaint
 blender
 kdenlive
 vlc
@@ -38,7 +41,8 @@ musescore
 
 # Misc
 aisleriot
-flameshot
+#flameshot
+spectacle
 imhex
 
 # Development
