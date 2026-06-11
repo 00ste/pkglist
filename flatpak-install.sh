@@ -1,18 +1,19 @@
 #!/bin/bash
 
+
 echo "=============================="
-echo "Installing Flatpak packages..."
+echo "Installing flatpak packages..."
 echo "=============================="
 
-dnf_list=~/pkglist/flatpak-list.txt
-dnf_lock=~/pkglist/flatpak-lock.txt
+list_path=~/pkglist/flatpak-list.txt
+lock_path=~/pkglist/flatpak-lock.txt
 
-if [[ ! -f "$dnf_lock" ]]; then
-	touch "$dnf_lock"
+if [[ ! -f "$lock_path" ]]; then
+	touch "$lock_path"
 fi
 
-pkgs_to_install=$(diff "$dnf_list" "$dnf_lock" | grep '^< [^#]' | sed 's/^<\ //')
-pkgs_to_remove=$(diff "$dnf_list" "$dnf_lock" | grep '^> [^#]' | sed 's/^>\ //')
+pkgs_to_install=$(comm -23 <(sort "$list_path") <(sort "$lock_path") | grep '^[^#]')
+pkgs_to_remove=$(comm -13 <(sort "$list_path") <(sort "$lock_path") | grep '^[^#]')
 
 if [[ -n "$pkgs_to_install" ]]; then
 	echo -n "Installing "
@@ -42,14 +43,11 @@ if [ "$yn" = "n" ] || [ "$yn" = "N" ]; then
 fi
 
 if [[ -n "$pkgs_to_install" ]]; then
-	#echo "flatpak install $pkgs_to_install"
 	flatpak install $pkgs_to_install
 fi
 
 if [[ -n "$pkgs_to_remove" ]]; then
-	#echo "flatpak remove $pkgs_to_remove"
 	flatpak remove $pkgs_to_remove
 fi
 
-#echo "cp $dnf_list $dnf_lock"
-cp "$dnf_list" "$dnf_lock"
+cp "$list_path" "$lock_path"
