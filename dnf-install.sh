@@ -5,10 +5,17 @@ echo "=========================="
 echo "Installing dnf packages..."
 echo "=========================="
 
-list_path=~/pkglist/dnf-list.txt
-lock_path=~/pkglist/dnf-lock.txt
+conf_path=~/.config/pkglist
+list_path="$conf_path/dnf-list.txt"
+lock_path="$conf_path/dnf-lock.txt"
+
+if [[ ! -f "$list_path" ]]; then
+    mkdir -p "$conf_path"
+	touch "$list_path"
+fi
 
 if [[ ! -f "$lock_path" ]]; then
+    mkdir -p "$conf_path"
 	touch "$lock_path"
 fi
 
