@@ -1,6 +1,6 @@
-# Fedora Packages List
+# Description
 
-A collection of scripts to manage packages declaratively using any package manager.
+A collection of scripts to install packages declaratively using any package manager.
 
 # Usage
 
