@@ -1,6 +1,6 @@
 # Fedora Packages List
 
-A collection of scripts to packages declaratively using any package manager.
+A collection of scripts to manage packages declaratively using any package manager.
 
 # Usage
 
@@ -36,5 +36,5 @@ To support a different package manager, for example `apt`, copy one of the exist
 
 - Rename the file `apt-install.sh`
 - Inside the script, change the path of the list and lock paths to be `apt-list.txt` and `apt-lock.txt`
-- Inside the script, change the statements that install and remove packages to be the corrects ones: `sudo apt install` for installing and `sudo apt remove` for removing
-- Inside `install.sh`, add a new line that calls the new script
+- Inside the script, change the statements that install and remove packages to be the correct ones: `sudo apt install` for installing and `sudo apt remove` for removing
+- Inside `install.sh`, add a line that calls the new script
